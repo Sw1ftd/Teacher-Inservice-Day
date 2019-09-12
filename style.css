@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: #ff9999;
+    background-color: white;
+}
+header {
+    text-align: center;
+    border : 10px solid black;
+}
+footer {
+    border : 5px solid black;
+}
+section {
+    display: flex;
+    flex-direction: column;
+}
+nav, article {
+    width: 100%;
+    border : 10px solid black;
+}
+nav {
+    text-align: center;
+}
+article div div {
+    max-width: 300px;
+    border: 5px solid black;
+    margin: 2px 2px;
+    padding: 0px;
+    display: block;
+    text-align: center;
+}
+article div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form input, label{
+    margin: 4px auto;
+}
+div.cart {
+    border : 10px solid black;
+}
+div.empty {
+    background-color: #ff9999;
+}
+@media screen and (max-width:600px) {
+    section {
+        flex-direction: column;
+    }
+}
